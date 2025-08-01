@@ -11,6 +11,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }
+        //maven { url "https://verve.jfrog.io/ui/native/verve-gradle-release" }
         jcenter()
         flatDir {
             dirs 'common-aar'
@@ -20,4 +21,4 @@ dependencyResolutionManagement {
 rootProject.name = "RapidOcrAndroidOnnx"
 include ':app'
 include ':OcrLibrary'
-include ':appjava'
+//include ':appjava'

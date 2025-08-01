@@ -88,13 +88,13 @@ class GalleryActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSee
                 Permission.READ_EXTERNAL_STORAGE,
                 rationaleHandler = rationaleHandler
             ) { result ->
-                val permissionGranted: Boolean =
+/*                val permissionGranted: Boolean =
                     result.isAllGranted(
                         Permission.READ_EXTERNAL_STORAGE
-                    )
-                if (!permissionGranted) {
+                    )*/
+            /*    if (!permissionGranted) {
                     showToast("未获取权限，应用无法正常使用！")
-                }
+                }*/
             }
         }
     }

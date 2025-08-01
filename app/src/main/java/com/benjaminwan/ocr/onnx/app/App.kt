@@ -2,7 +2,6 @@ package com.benjaminwan.ocr.onnx.app
 
 import android.app.Application
 import android.util.Log
-import com.benjaminwan.ocr.onnx.BuildConfig
 import com.benjaminwan.ocrlibrary.OcrEngine
 import com.orhanobut.logger.AndroidLogAdapter
 import com.orhanobut.logger.LogStrategy
@@ -32,7 +31,7 @@ class App : Application() {
             .logStrategy(LogCatStrategy())
             .build()
         Logger.addLogAdapter(object : AndroidLogAdapter(formatStrategy) {
-            override fun isLoggable(priority: Int, tag: String?): Boolean = BuildConfig.DEBUG
+            override fun isLoggable(priority: Int, tag: String?): Boolean = false
         })
     }
 

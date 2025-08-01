@@ -11,10 +11,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun initViews() {
         binding.galleryBtn.setOnClickListener(this)
-        binding.cameraBtn.setOnClickListener(this)
+/*        binding.cameraBtn.setOnClickListener(this)
         binding.imeiBtn.setOnClickListener(this)
         binding.plateBtn.setOnClickListener(this)
-        binding.idCardBtn.setOnClickListener(this)
+        binding.idCardBtn.setOnClickListener(this)*/
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,18 +30,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.galleryBtn -> {
                 startActivity(Intent(this, GalleryActivity::class.java))
             }
-            R.id.cameraBtn -> {
+    /*        R.id.cameraBtn -> {
                 startActivity(Intent(this, CameraActivity::class.java))
             }
             R.id.imeiBtn -> {
                 startActivity(Intent(this, ImeiActivity::class.java))
-            }
-            R.id.plateBtn -> {
+            }*/
+/*            R.id.plateBtn -> {
                 startActivity(Intent(this, PlateActivity::class.java))
             }
             R.id.idCardBtn -> {
                 startActivity(Intent(this, IdCardFrontActivity::class.java))
-            }
+            }*/
             else -> {
             }
         }

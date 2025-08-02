@@ -86,3 +86,5 @@ lint/tmp/
 .DS_Store
 ~*.xlsx
 other/~*.xlsx
+OcrLibrary/src/main/onnxruntime-shared-1.14.0/
+OcrLibrary/src/main/onnxruntime-shared-1.14.1/
